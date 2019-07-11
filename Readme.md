@@ -1,10 +1,10 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Семен Згурский](https://up.htmlacademy.ru/adaptive/17/user/252845).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
-
+ 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
 Полезный файл:
