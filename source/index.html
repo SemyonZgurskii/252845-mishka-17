@@ -6,15 +6,27 @@
   </head>
 
 <body>
-  <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <img class="main-header__logo-image" src="#" alt="Mishka logo">
+  <header class="header">
+    <a class="header__logo" href="#">
+      <img class="header__logo-image" src="#" alt="Mishka logo">
     </a>
-    <button class="main-header__menu-button"></button>
-    <nav class="main-header__navigation">
-
+    <button class="header__menu-button"></button>
+    <nav class="header__navigation main-navigation">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="catalog.html" class="main-navigation__link">Каталог товаров</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="form.html" class="main-navigation__link">Вязание на заказ</a>
+        </li>
+      </ul>
     </nav>
+    <div class="header__side-menu side-menu">
+      <a href="#" class="side-menu__item side-menu__item--search">Поиск по сайту</a>
+      <a href="#" class="side-menu__item side-menu__item--basket">Корзина: пока пуста</a>
+    </div>
   </header>
+
   <main class="main-content">
     <section class="our-products">
       <h2 class="visually-hidden">Наша продукция</h2>
@@ -40,15 +52,15 @@
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
       <table class="week-product__characteristics characteristics-table">
-        <tr class="characterestics-table__row">
+        <tr class="characteristics-table__row">
           <th class="characteristics-table__head">Цвет:</th>
           <td class="characterestic-table__cell">«Тиффани»/серый</td>
         </tr>
-        <tr class="characterestics-table__row">
+        <tr class="characteristics-table__row">
           <th class="characteristics-table__head">Диаметр:</th>
           <td class="characterestic-table__cell">25см</td>
         </tr>
-        <tr class="characterestics-table__row">
+        <tr class="characteristics-table__row">
           <th class="characteristics-table__head">Высота:</th>
           <td class="characterestic-table__cell">15см</td>
         </tr>
@@ -71,30 +83,30 @@
     </section>
   </main>
 
-  <footer class="main-footer">
-    <ul class="main-footer__social-list">
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link main-footer__social-link--insta" href="#"><span class="visually-hidden">
+  <footer class="footer">
+    <ul class="footer__social social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--insta" href="#"><span class="visually-hidden">
           Инстаграмм
         </span></a>
       </li>
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link main-footer__social-link--facebook" href="#"><span class="visually-hidden">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="#"><span class="visually-hidden">
           Фейсбук
         </span></a>
       </li>
-      <li class="main-footer__social-item">
-        <a class="main-footer__social-link main-footer__social-link--twitter" href="#"><span class="visually-hidden">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="#"><span class="visually-hidden">
           Твиттер
         </span></a>
       </li>
     </ul>
-    <div class="main-footer__copyright">
-      <p class="main-footer__cofyright-text">
+    <div class="footer__copyright">
+      <p class="footer__cofyright-text">
         Разработано
       </p>
-      <a href="" class="main-footer__copyright-link">
-        <img src="#" alt="Логотип HTML-Academy" class="main-footer__copyright-image">
+      <a href="" class="footer__copyright-link">
+        <img src="#" alt="Логотип HTML-Academy" class="footer__copyright-image">
       </a>
     </div>
   </footer>
