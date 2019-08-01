@@ -1,0 +1,61 @@
+.header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  display: flex;
+  height: 77px;
+}
+
+.header__logo-image {
+  margin: auto;
+}
+
+.header__menu-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 20px;
+  height: 20px;
+}
+
+.header__delivery {
+  position: absolute;
+
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .header__menu-button {
+    display: none;
+  }
+
+  .header__navigation {
+    position: absolute;
+    bottom: -60px;
+  }
+
+  .header__delivery {
+    right: 0;
+    bottom: -60px;
+
+    display: block;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header__navigation {
+    position: static;
+
+    order: -1;
+  }
+}

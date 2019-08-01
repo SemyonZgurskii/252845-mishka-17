@@ -31,3 +31,54 @@
   font-weight: 700;
   color: #444444;
 }
+
+@media (min-width: 768px) {
+  .week-product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .week-product__head-wrapper {
+    display: flex;
+  }
+
+  .week-product__name {
+    margin-right: auto;
+  }
+
+  .week-product__content-wrapper {
+    position: relative;
+
+    width: 300px;
+    min-height: 406px;
+    margin-right: auto;
+  }
+
+  .week-product__image {
+    position: absolute;
+    top: 0;
+    right: -375px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .week-product {
+    position: relative;
+  }
+
+  .week-product__head-wrapper {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+  }
+
+  .week-product__title {
+    order: -1;
+  }
+
+  .week-product__content-wrapper {
+    min-height: 640px;
+    padding-top: 170px;
+    padding-left: 170px;
+  }
+}

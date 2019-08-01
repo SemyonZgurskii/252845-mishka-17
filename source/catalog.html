@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, nitial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,8 +10,8 @@
 <body>
 
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Mishka logo">
+    <a class="header__logo" href="#">
+      <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka logo">
     </a>
     <button class="header__menu-button"></button>
     <nav class="header__navigation main-navigation">
@@ -26,7 +27,18 @@
     <div class="header__side-menu side-menu">
       <a href="#" class="side-menu__item side-menu__item--search">Поиск по сайту</a>
       <a href="#" class="side-menu__item side-menu__item--basket">Корзина: пока пуста</a>
+      <div class="side-menu__sub-section">
+        <a href="#" class="side-menu__sub-item">
+          Новые поступления
+        </a>
+        <a href="#" class="side-menu__sub-item">
+          Распродажа
+        </a>
+      </div>
     </div>
+    <p class="header__delivery">
+      Бесплатная доставка по всей России
+    </p>
   </header>
 
   <main class="main-content">
@@ -35,36 +47,42 @@
       <ul class="catalog__list">
         <li class="catalog__item product">
           <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Изображение зайчика-попрыгайчика" >
-          <h3 class="product__title">Зайчик-попрыгайчик</h3>
-          <p class="product__characteristics">
-            Рост 30 см, вес 200 г
-          </p>
-          <p class="product__price">1200 руб.</p>
-          <a href="#" class="product__basket-add">
-            <span class="visually-hidden">добавить в корзину</span>
-          </a>
+          <div class="product__description-container">
+            <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            <p class="product__characteristics">
+              Рост 30 см, вес 200 г
+            </p>
+            <p class="product__price">1200 руб.</p>
+            <a href="#" class="product__basket-add">
+              <span class="visually-hidden">добавить в корзину</span>
+            </a>
+          </div>
         </li>
         <li class="catalog__item product">
           <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Изображение зайчика-попрыгайчика" >
-          <h3 class="product__title">Корзинка для белья</h3>
-          <p class="product__characteristics">
-            Диаметр 15см, высота 10 см
-          </p>
-          <p class="product__price">690 руб.</p>
-          <a href="#" class="product__basket-add">
-            <span class="visually-hidden">добавить в корзину</span>
-          </a>
+          <div class="product__description-container">
+            <h3 class="product__title">Корзинка для белья</h3>
+            <p class="product__characteristics">
+              Диаметр 15см, высота 10 см
+            </p>
+            <p class="product__price">690 руб.</p>
+            <a href="#" class="product__basket-add">
+              <span class="visually-hidden">добавить в корзину</span>
+            </a>
+          </div>
         </li>
         <li class="catalog__item product">
           <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Изображение зайчика-попрыгайчика" >
-          <h3 class="product__title">Большая корзинка для игрушек</h3>
-          <p class="product__characteristics">
-            Диаметр 30 см, высота 30 см
-          </p>
-          <p class="product__price">1500 руб.</p>
-          <a href="#" class="product__basket-add">
-            <span class="visually-hidden">добавить в корзину</span>
-          </a>
+          <div class="product__description-container">
+            <h3 class="product__title">Большая корзинка для игрушек</h3>
+            <p class="product__characteristics">
+              Диаметр 30 см, высота 30 см
+            </p>
+            <p class="product__price">1500 руб.</p>
+            <a href="#" class="product__basket-add">
+              <span class="visually-hidden">добавить в корзину</span>
+            </a>
+          </div>
         </li>
       </ul>
     </section>

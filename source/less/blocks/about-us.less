@@ -8,7 +8,27 @@
   line-height: 30px;
 }
 
+.about-us__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .about-us__item {
   font-size: 17px;
   line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+  }
+
+  .about-us__item {
+    width: 310px;
+  }
 }
