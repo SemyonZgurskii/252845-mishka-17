@@ -1,4 +1,8 @@
 .about-us {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+
   color: #000000;
   font-weight: 700;
 }
@@ -16,16 +20,22 @@
 }
 
 .about-us__item {
+  padding-top: 30px;
+
   font-size: 17px;
   line-height: 20px;
 }
 
 @media (min-width: 768px) {
+  .about-us {
+    width: 670px;
+    padding: 0 49px;
+  }
+
   .about-us__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 640px;
   }
 
   .about-us__item {

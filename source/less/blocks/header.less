@@ -23,6 +23,10 @@
   height: 20px;
 }
 
+.header__sub-menu {
+  display: none;
+}
+
 .header__delivery {
   position: absolute;
 
@@ -33,6 +37,9 @@
   .header {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 670px;
+    padding: 0 49px;
+    margin: 0 auto;
   }
 
   .header__menu-button {
@@ -41,11 +48,12 @@
 
   .header__navigation {
     position: absolute;
+    left: 49px;
     bottom: -60px;
   }
 
   .header__delivery {
-    right: 0;
+    right: 49px;
     bottom: -60px;
 
     display: block;
@@ -53,9 +61,22 @@
 }
 
 @media (min-width: 1150px) {
+  .header {
+    width: 1052px;
+    margin: 0 auto;
+  }
+
   .header__navigation {
     position: static;
 
     order: -1;
+  }
+
+  .header__sub-menu {
+    display: flex;
+
+    position: absolute;
+    bottom: -50px;
+    left: 49px;
   }
 }

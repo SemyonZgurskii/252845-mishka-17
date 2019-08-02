@@ -26,14 +26,14 @@
     <div class="header__side-menu side-menu">
       <a href="#" class="side-menu__item side-menu__item--search">Поиск по сайту</a>
       <a href="#" class="side-menu__item side-menu__item--basket">Корзина: пока пуста</a>
-      <div class="side-menu__sub-section">
-        <a href="#" class="side-menu__sub-item">
-          Новые поступления
-        </a>
-        <a href="#" class="side-menu__sub-item">
-          Распродажа
-        </a>
-      </div>
+    </div>
+    <div class="header__sub-menu sub-menu">
+      <a href="#" class="sub-menu__item">
+        Новые поступления
+      </a>
+      <a href="#" class="sub-menu__item">
+        Распродажа
+      </a>
     </div>
     <p class="header__delivery">
       Бесплатная доставка по всей России
@@ -42,19 +42,23 @@
 
   <main class="main-content">
     <section class="our-products">
-      <h2 class="visually-hidden">Наша продукция</h2>
-      <p class="our-products__text">
-        Милые штучки ручной работы для дома
-      </p>
-      <div class="our-products__item our-products__item--interier">
-        <p class="our-products__title">
-          Предметы интерьера
+      <div class="our-products__content-wrapper">
+        <h2 class="visually-hidden">Наша продукция</h2>
+        <p class="our-products__text">
+          Милые штучки ручной работы для дома
         </p>
-      </div>
-      <div class="our-products__item our-products__item--toys">
-        <p class="our-products__title">
-          Детские игрушки
-        </p>
+        <ul class="our-products__list">
+          <li class="our-products__item our-products__item--interier">
+            <p class="our-products__title">
+              Предметы интерьера
+            </p>
+          </li>
+          <li class="our-products__item our-products__item--toys">
+            <p class="our-products__title">
+              Детские игрушки
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -103,30 +107,36 @@
   </main>
 
   <footer class="footer">
-    <ul class="footer__social social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--insta" href="#"><span class="visually-hidden">
-          Инстаграмм
-        </span></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--facebook" href="#"><span class="visually-hidden">
-          Фейсбук
-        </span></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--twitter" href="#"><span class="visually-hidden">
-          Твиттер
-        </span></a>
-      </li>
-    </ul>
-    <div class="footer__copyright">
-      <p class="footer__cofyright-text">
-        Разработано
-      </p>
-      <a href="" class="footer__copyright-link">
-        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML-Academy" class="footer__copyright-image">
-      </a>
+    <div class="footer__content-wrapper">
+      <img class="footer__logo" src="img/logo-footer.svg" alt="Логотип Mishka" width="102" height="34">
+      <ul class="footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#">
+            <img class="social-list__icon" src="img/icon-insta.svg" alt="Логотип Инстаграма" width="22" height="22">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#">
+            <img class="social-list__icon" src="img/icon-fb.svg" alt="Логотип Фейсбука" width="15" height="28">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--insta" href="#">
+            <img src="img/icon-twitter.svg" alt="Логотип Твиттера" class="social-list__icon" width="23" height="20">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">
+          Разработано
+        </p>
+        <a class="copyright__link" href="#">
+          <img src="img/logo-htmlacademy.svg" alt="Логотип HTML-Academy" class="footer__copyright-image">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

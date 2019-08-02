@@ -13,6 +13,13 @@
   font-weight: 700;
 }
 
+.our-products__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .our-products__item--interier {
   background-color: #63d1bb;
 }
@@ -34,5 +41,29 @@
 @media (min-width: 768px) {
   .our-products {
     margin-bottom: 70px;
+  }
+
+  .our-products__content-wrapper {
+    width: 670px;
+    padding: 0 49px;
+    margin: 0 auto;
+  }
+
+  .our-products__list {
+    display: flex;
+  }
+
+  .our-products__item {
+    width: 335px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .our-products__content-wrapper {
+    width: 1052px;
+  }
+
+  .our-products__item {
+    width: 526px;
   }
 }
