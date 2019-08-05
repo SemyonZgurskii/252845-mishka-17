@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, nitial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,7 +12,7 @@
     <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka logo">
     </a>
-    <button class="header__menu-button"></button>
+    <button class="header__menu-toggle header__menu-toggle--closed" type="button"><span class="visually-hidden">открыть меню</span></button>
     <nav class="header__navigation main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
@@ -72,5 +73,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
