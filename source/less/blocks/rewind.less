@@ -1,0 +1,58 @@
+.rewind__button {
+  position: relative;
+
+  width: 130px;
+  height: 50px;
+
+  background-color: #ffffff;
+  border: 2px solid #ececec;
+}
+
+.rewind__button--next {
+  margin-left: -6px;
+}
+
+.rewind__button::before {
+  position: absolute;
+  top: 22px;
+  left: 37px;
+
+  content: "";
+  display: block;
+  width: 45px;
+  height: 4px;
+
+  background-color: #000000;
+}
+
+.rewind__button::after {
+  position: absolute;
+  top: 15px;
+  left: 36px;
+
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  border-top: 4px solid #000000;
+  border-left: 4px solid #000000;
+
+  transform: rotate(-45deg);
+}
+
+.rewind__button--next::before {
+  left: 37px;
+}
+
+.rewind__button--next::after {
+  left: 65px;
+
+  transform: rotate(135deg);
+}
+
+@media (min-width: 768px) {
+  .rewind__button {
+    border: none;
+  }
+}

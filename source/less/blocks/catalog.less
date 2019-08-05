@@ -1,3 +1,29 @@
 .catalog__list {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+
   list-style: none;
+}
+
+.catalog__item {
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .catalog__list {
+    width: 670px;
+    padding: 0 49px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog__list {
+    display: flex;
+    width: 1052px;
+  }
+
+  .catalog__item:not(:nth-child(3n)) {
+    margin-right: 51px;
+  }
 }

@@ -1,11 +1,27 @@
 .main-navigation__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+  border-top: 1px solid #ececec;
 }
 
 .main-navigation__link {
+  display: block;
+  padding: 25px 0;
+
+  text-align: center;
   text-decoration: none;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__list {
+    display: flex;
+  }
 }
