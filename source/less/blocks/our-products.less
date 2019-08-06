@@ -1,13 +1,15 @@
 .our-products {
-  padding-top: 68px;
+  padding-top: 44px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position-x: center;
+  background-position: 50% -17px;
 }
 
 .our-products__text {
-  margin-bottom: 125px;
+  margin-bottom: 122px;
+  padding: 0 35px;
 
+  text-align: center;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -20,17 +22,10 @@
   list-style: none;
 }
 
-.our-products__item--interier {
-  background-color: #63d1bb;
-}
-
-.our-products__item--toys {
-  background-color: #56c3b2;
-}
-
-.our-products__title {
+.our-products__link {
+  display: block;
   margin: 0;
-  padding: 25px 0;
+  padding: 25px 29px;
 
   font-size: 19px;
   line-height: 24px;
@@ -38,11 +33,20 @@
   color: #ffffff;
 }
 
+.our-products__link--interier {
+  background-color: #63d1bb;
+}
+
+.our-products__link--toys {
+  background-color: #56c3b2;
+}
+
 @media (min-width: 768px) {
   .our-products {
     margin-bottom: 70px;
 
     background-image: url("../img/hero-tablet@1x.jpg");
+    border-top: 1px solid #e7e7e7;
   }
 
   .our-products__content-wrapper {
