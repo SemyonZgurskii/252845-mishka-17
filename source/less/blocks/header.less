@@ -58,11 +58,20 @@
 
 .header__logo {
   display: flex;
-  height: 79px;
+  height: 75px;
+  padding-top: 4px;
 }
 
 .header__logo-image {
   margin: auto;
+}
+
+.header__logo-image:hover {
+  opacity: 0.6;
+}
+
+.header__logo-image:active {
+  opacity: 0.3;
 }
 
 .header__sub-menu {
@@ -71,6 +80,7 @@
 
 .header__delivery {
   position: absolute;
+  z-index: 1;
 
   display: none;
 }
@@ -93,7 +103,7 @@
 
   .header__logo {
     height: 81px;
-    padding-top: 5px;
+    padding-top: 7px;
   }
 
   .header__logo-image img {
@@ -107,6 +117,7 @@
 
   .header__navigation {
     position: absolute;
+    z-index: 1;
     left: 50px;
     bottom: -52px;
   }
@@ -133,6 +144,7 @@
   .header__logo {
     height: 83px;
     margin: auto;
+    padding-top: 5px;
   }
 
   .header__logo-image img {
@@ -149,6 +161,7 @@
 
   .header__sub-menu {
     display: flex;
+    z-index: 1;
 
     position: absolute;
     bottom: -42px;

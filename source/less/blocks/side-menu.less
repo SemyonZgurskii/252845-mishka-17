@@ -27,6 +27,15 @@
   color: #000000;
 }
 
+.side-menu__link:focus .side-menu__link-text,
+.side-menu__link:hover .side-menu__link-text {
+  color: fade(#000000, 60%);
+}
+
+.side-menu__link:active .side-menu__link-text {
+  color: fade(#000000, 30%);
+}
+
 
 .side-menu__link-text svg {
   position: absolute;
@@ -36,10 +45,12 @@
   opacity: 0.2;
 }
 
+.side-menu__link:focus svg,
 .side-menu__link:hover svg {
   opacity: 1;
 }
 
+.side-menu__link:focus path,
 .side-menu__link:hover path {
   fill: #63d1bb;
 }
@@ -64,13 +75,21 @@
   }
 
   .side-menu__link-text {
-    padding-top: 3px;
+    padding-top: 4px;
   }
 
   .side-menu__link-text--search {
     width: 82px;
 
-    font-size: 0;
+    font-size: 1px;
+    line-height: 1px;
+    color: transparent;
+  }
+
+  .side-menu__link:active .side-menu__link-text--search,
+  .side-menu__link:hover .side-menu__link-text--search,
+  .side-menu__link:focus .side-menu__link-text--search {
+    color: transparent;
   }
 
   .side-menu__link-text--basket {
@@ -80,7 +99,7 @@
 
   .side-menu__link svg {
     left: 32px;
-    top: 6px;
+    top: 8px;
   }
 }
 

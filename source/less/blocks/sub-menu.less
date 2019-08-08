@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.sub-menu__item {
+.sub-menu__link {
   margin-right: 61px;
 
   text-decoration: none;
@@ -10,4 +10,13 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
+
+.sub-menu__link:focus,
+.sub-menu__link:hover {
+  color: fade(#000000, 60%);
+}
+
+.sub-menu__link:active {
+  color: fade(#000000, 30%);
 }

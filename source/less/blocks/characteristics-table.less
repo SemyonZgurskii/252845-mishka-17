@@ -1,13 +1,26 @@
 .characteristics-table {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #444444;
+  width: 100%;
+
+  border-collapse: collapse;
 }
 
-.characteristics-table__head {
+.characteristics-table__head,
+.characteristics-table__cell {
+  min-width: 79px;
+  height: 35px;
+  padding-bottom: 3px;
+
+  text-align: left;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
   color: #444444;
+
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .characteristics-table__cell {
+    padding-right: 36px;
+  }
 }

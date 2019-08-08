@@ -28,6 +28,15 @@
   color: #000000;
 }
 
+.main-navigation__link:focus .main-navigation__link-text,
+.main-navigation__link:hover .main-navigation__link-text {
+  color: fade(#000000, 60%);
+}
+
+.main-navigation__link:active .main-navigation__link-text {
+  color: fade(#000000, 30%);
+}
+
 @media (min-width: 768px) {
   .main-navigation__list {
     display: flex;
