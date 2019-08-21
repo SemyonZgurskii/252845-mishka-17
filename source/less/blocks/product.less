@@ -11,6 +11,19 @@
   display: block;
 }
 
+.product__image:focus ~ .product__description-container,
+.product__image:hover ~ .product__description-container {
+  box-shadow: 0 6px 10px 0 fade(#000000, 10%);
+}
+
+.product__description-container:focus-within {
+  box-shadow: 0 6px 10px 0 fade(#000000, 10%);
+}
+
+.product__image:active ~ .product__description-container {
+  box-shadow: 0 3px 5px 0 fade(#000000, 10%);
+}
+
 .product__title-link {
   text-decoration: none;
   color: #000000;
@@ -23,6 +36,15 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  color: #000000;
+}
+
+.product__title:hover {
+  color: fade(#000000, 60%);
+}
+
+.product__title:active {
+  color: fade(#000000, 30%);
 }
 
 .product__characteristics {
@@ -66,9 +88,12 @@
   opacity: 0.2;
 }
 
+.product__basket:hover {
+  opacity: 1;
+}
+
 .product__basket:hover path {
   fill: #63d1bb;
-  opacity: 1;
 }
 
 .product__basket:active path {
@@ -125,30 +150,14 @@
 }
 
 @media (min-width: 1150px) {
-  .product {
-    flex-wrap: wrap;
-    align-content: stretch;
-    width: 316px;
-  }
-
-  .product__image {
-    height: 462px;
-  }
-
-  .product__image img {
-    width: 316px;
-    height: 462px;
-    padding-left: 0;
-  }
-
-  .product__description-container {
-    width: 316px;
-  }
-
   // .product {
-  //   flex-direction: column;
   //   flex-wrap: wrap;
+  //   align-content: stretch;
   //   width: 316px;
+  // }
+
+  // .product__image {
+  //   height: 462px;
   // }
 
   // .product__image img {
@@ -158,7 +167,38 @@
   // }
 
   // .product__description-container {
-  //   flex-grow: 1;
-  //   width: auto;
+  //   width: 316px;
   // }
+
+  .product {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 316px;
+  }
+
+  .product__image img {
+    width: 316px;
+    height: 462px;
+    padding-left: 0;
+  }
+
+  .product__description-container {
+    flex-grow: 1;
+    width: auto;
+    padding-left: 26px;
+
+    border: 1px solid #ededed;
+  }
+
+  .product__title {
+    padding-right: 25px;
+  }
+
+  .product__characteristics {
+    padding-bottom: 15px;
+  }
+
+  .product__price {
+    padding-left: 0;
+  }
 }
