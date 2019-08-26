@@ -17,7 +17,18 @@
 }
 
 .contacts__map-container {
+  position: relative;
+
   margin-bottom: 34px;
+}
+
+.contacts__map-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+
+  transform: translateX(-50%);
 }
 
 .contacts__map {
@@ -74,6 +85,11 @@
     margin-bottom: 50px;
   }
 
+  .contacts__map-image img {
+    width: 768px;
+    height: 457px;
+  }
+
   .contacts__write-button {
     width: 230px;
   }
@@ -113,6 +129,11 @@
     left: 355px;
 
     width: 526px;
+  }
+
+  .contacts__map-image img{
+    width: 525px;
+    height: 457px;
   }
 
   .contacts__write-button {

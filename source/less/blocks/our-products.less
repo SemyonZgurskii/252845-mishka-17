@@ -1,8 +1,10 @@
 .our-products {
   padding-top: 44px;
 
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: 50% -17px;
+  background-repeat: no-repeat;
 }
 
 .our-products__text {
@@ -31,12 +33,6 @@
   padding-bottom: 29px;
 
   text-decoration: none;
-}
-
-.our-products__link:focus,
-.our-products__link:hover {
-  bottom: 0;
-  top: -5px;
 }
 
 .our-products__link::before {
@@ -143,6 +139,12 @@
   .our-products__link {
     min-height: 72px;
     padding: 29px 38px;
+  }
+
+  .our-products__link:focus,
+  .our-products__link:hover {
+    bottom: 0;
+    top: -5px;
   }
 
   .our-products__link::before {
