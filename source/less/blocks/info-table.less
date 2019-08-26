@@ -1,0 +1,64 @@
+.info-table {
+  padding: 0 28px;
+}
+
+.info-table__cell {
+  min-width: 73px;
+  padding-bottom: 27px;
+
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.info-table__email {
+  position: relative;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-table__email::before {
+  position: absolute;
+  top: 25px;
+  left: 1px;
+  right: 3px;
+
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #62d1ba;
+}
+
+@media (min-width: 768px) {
+  .info-table {
+    padding: 0 46px;
+  }
+
+  .info-table tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info-table__row {
+    width: 315px;
+  }
+
+  .info-table__row:nth-child(2n-1) {
+    margin-right: 18px;
+  }
+
+  .info-table__cell {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .info-table {
+    padding: 0;
+  }
+
+  .info-table__cell {
+    padding-bottom: 24px;
+  }
+}

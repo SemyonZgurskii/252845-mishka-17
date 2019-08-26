@@ -1,10 +1,43 @@
 .copyright {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 15px;
 }
 
 .copyright__text {
+  margin: 0;
+  margin-right: 27px;
+}
+
+.copyright__text a {
+  text-decoration: none;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
+}
+
+.copyright__text a:active {
+  color: fade(#000000, 30%);
+}
+
+.copyright__logo {
+  padding-top: 7px;
+}
+
+.copyright__logo:hover .copyright__logo-image {
+  fill: #46c1ae;
+}
+
+.copyright__logo:active .copyright__logo-image {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .copyright__text {
+    margin-right: 29px;
+  }
 }

@@ -1,0 +1,142 @@
+.contacts {
+  padding: 20px 0;
+  padding-bottom: 39px;
+}
+
+.contacts__title {
+  padding: 0 28px;
+  margin-bottom: 23px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__info-table {
+  min-width: 260px;
+  margin-bottom: 8px;
+}
+
+.contacts__map-container {
+  position: relative;
+
+  margin-bottom: 34px;
+}
+
+.contacts__map-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+
+  transform: translateX(-50%);
+}
+
+.contacts__map {
+  width: 100%;
+  height: 457px;
+
+  border: none;
+}
+
+.contacts__write-button {
+  display: block;
+  width: 260px;
+  height: 52px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    padding: 26px 0;
+    padding-bottom: 57px;
+    margin: auto;
+  }
+
+  .contacts__title {
+    position: relative;
+
+    padding: 0 46px;
+    margin-bottom: 44px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__title::before {
+    position: absolute;
+    top: -15px;
+    left: 668px;
+
+    content: "";
+    display: block;
+    width: 60px;
+    height: 95px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  .contacts__info-table {
+    margin-bottom: 25px;
+  }
+
+  .contacts__map-container {
+    margin-bottom: 50px;
+  }
+
+  .contacts__map-image img {
+    width: 768px;
+    height: 457px;
+  }
+
+  .contacts__write-button {
+    width: 230px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts {
+    position: relative;
+
+    width: 315px;
+    padding-left: 0;
+    padding-right: 397px;
+    padding-top: 97px;
+    padding-bottom: 105px;
+  }
+
+  .contacts__title {
+    padding: 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__title::before {
+    top: -9px;
+    left: -106px;
+  }
+
+  .contacts__info-table {
+    padding: 0;
+    margin-bottom: 51px;
+  }
+
+  .contacts__map-container {
+    position: absolute;
+    top: 70px;
+    left: 355px;
+
+    width: 526px;
+  }
+
+  .contacts__map-image img {
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__write-button {
+    margin-left: 6px;
+  }
+}

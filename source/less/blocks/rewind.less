@@ -8,6 +8,14 @@
   border: 2px solid #ececec;
 }
 
+.rewind__button:hover {
+  opacity: 0.6;
+}
+
+.rewind__buttom:active {
+  opacity: 0.3;
+}
+
 .rewind__button--next {
   margin-left: -6px;
 }
@@ -15,7 +23,7 @@
 .rewind__button::before {
   position: absolute;
   top: 22px;
-  left: 37px;
+  left: 41px;
 
   content: "";
   display: block;
@@ -28,7 +36,7 @@
 .rewind__button::after {
   position: absolute;
   top: 15px;
-  left: 36px;
+  left: 40px;
 
   content: "";
   display: block;
@@ -42,17 +50,35 @@
 }
 
 .rewind__button--next::before {
-  left: 37px;
+  left: 38px;
 }
 
 .rewind__button--next::after {
-  left: 65px;
+  left: 66px;
 
   transform: rotate(135deg);
 }
 
 @media (min-width: 768px) {
   .rewind__button {
+    width: 101px;
+
     border: none;
+  }
+
+  .rewind__button--previous::before {
+    left: 48px;
+  }
+
+  .rewind__button--previous::after {
+    left: 47px;
+  }
+
+  .rewind__button--next::before {
+    left: 31px;
+  }
+
+  .rewind__button--next::after {
+    left: 59px;
   }
 }

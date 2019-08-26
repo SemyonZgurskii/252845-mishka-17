@@ -3,22 +3,117 @@
   flex-direction: column;
 }
 
-.side-menu__item {
-  padding: 26px 0;
+.side-menu__link {
+  display: flex;
+  justify-content: center;
+  padding: 27px 0;
 
-  text-align: center;
   text-decoration: none;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.side-menu__link-text {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 250px;
+  padding-left: 40px;
+
+  text-align: left;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+}
 
-  border-bottom: 1px solid #ececec;
+.side-menu__link:focus .side-menu__link-text,
+.side-menu__link:hover .side-menu__link-text {
+  color: fade(#000000, 60%);
+}
+
+.side-menu__link:active .side-menu__link-text {
+  color: fade(#000000, 30%);
+}
+
+
+.side-menu__link-text svg {
+  position: absolute;
+  top: 4px;
+  left: -3px;
+
+  opacity: 0.2;
+}
+
+.side-menu__link:focus svg,
+.side-menu__link:hover svg {
+  opacity: 1;
+}
+
+.side-menu__link:focus path,
+.side-menu__link:hover path {
+  fill: #63d1bb;
+}
+
+.side-menu__link:active svg {
+  opacity: 0.3;
+}
+
+.side-menu__link:active path {
+  fill: #63d1bb;
 }
 
 @media (min-width: 768px) {
   .side-menu {
     flex-direction: row;
     margin-left: auto;
+  }
+
+  .side-menu__link {
+    border-bottom: none;
+    border-left: 1px solid #ececec;
+  }
+
+  .side-menu__link-text {
+    padding-top: 4px;
+  }
+
+  .side-menu__link-text--search {
+    width: 82px;
+
+    font-size: 1px;
+    line-height: 1px;
+    color: transparent;
+  }
+
+  .side-menu__link:active .side-menu__link-text--search,
+  .side-menu__link:hover .side-menu__link-text--search,
+  .side-menu__link:focus .side-menu__link-text--search {
+    color: transparent;
+  }
+
+  .side-menu__link-text--basket {
+    width: 265px;
+    padding-left: 83px;
+  }
+
+  .side-menu__link svg {
+    left: 32px;
+    top: 8px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .side-menu__link-text {
+    padding-top: 5px;
+  }
+
+  .side-menu__link-text--basket {
+    padding-left: 81px;
+  }
+
+  .side-menu__link svg {
+    left: 31px;
+    top: 8px;
   }
 }

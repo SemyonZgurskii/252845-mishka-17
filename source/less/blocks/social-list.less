@@ -1,9 +1,26 @@
 .social-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 
   list-style: none;
 }
 
+.social-list__item {
+  width: 28px;
+  margin-bottom: 10px;
+}
+
 .social-list__item:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+
+.social-list__link:hover path {
+  fill: #46c1ae;
+}
+
+.social-list__link:active path {
+  fill: #46c1ae;
+  opacity: 0.3;
 }

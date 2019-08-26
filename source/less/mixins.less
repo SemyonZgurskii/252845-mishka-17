@@ -17,5 +17,28 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  box-sizing: border-box;
+  display: inline-block;
+
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #444444;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+}
+
+.button:hover {
+  color: #ffffff;
+
+  background-color: #444444;
+}
+
+.button:active {
+  color: fade(#ffffff, 30%);
 }
