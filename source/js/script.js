@@ -1,6 +1,9 @@
 var menuToggle = document.querySelector(".header__menu-toggle");
 var mainNav = document.querySelector(".header__navigation");
 var sideMenu = document.querySelector(".header__side-menu");
+var weekProductOrder = document.querySelector(".week-product__order-button");
+var modal = document.querySelector(".modal-bg");
+var submitModal = document.querySelector(".modal__button");
 
 mainNav.classList.remove(".header-navigation--nojs");
 sideMenu.classList.remove(".header__side-menu--nojs");
@@ -13,4 +16,12 @@ menuToggle.addEventListener('click', function() {
     menuToggle.classList.remove("header__menu-toggle--opened");
     menuToggle.classList.add("header__menu-toggle--closed");
   }
+});
+
+weekProductOrder.addEventListener('click', function() {
+  modal.classList.add("modal-bg--show");
+});
+
+modal.addEventListener('click', function() {
+  modal.classList.remove("modal-bg--show");
 });
