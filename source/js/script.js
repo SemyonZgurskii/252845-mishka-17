@@ -24,16 +24,16 @@ weekProductOrder.addEventListener("click", function(evt) {
   modal.classList.add("modal-bg--show");
 });
 
-// cartAdd.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   modal.classList.add("modal-bg--show");
-// });
-
-modal.addEventListener("click", function(evt) {
-  if (evt.target.closest(".modal-bg") === null) {
-    modal.classList.remove("modal-bg--show");
-  }
+cartAdd.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modal.classList.add("modal-bg--show");
 });
+
+// modal.addEventListener("click", function(evt) {
+//   if (evt.target.closest(".modal-bg") === null) {
+//     modal.classList.remove("modal-bg--show");
+//   }
+// });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
