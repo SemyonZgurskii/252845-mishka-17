@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, nitial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -41,7 +41,7 @@
         <img  src="img/logo-mobile.svg"  alt="Mishka logo" width="86" height="35">
       </picture>
     </a>
-    <button class="header__menu-toggle header__menu-toggle--closed" type="button"><span class="visually-hidden">открыть меню</span></button>
+    <button class="header__menu-toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
     <nav class="header__navigation main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
@@ -95,17 +95,19 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="order__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">ТИП</legend>
-          <input class="form__radio visually-hidden" type="radio" name="type" id="accessories" checked>
-          <label class="form__inside-label form__inside-label--radio" for="accessories">Аксессуар для интерьера</label>
-          <input class="form__radio visually-hidden" type="radio" name="type" id="toy">
-          <label class="form__inside-label form__inside-label--radio" for="toy">Детская игрушка</label>
-        </fieldset>
+        <div class="form__fieldset">
+          <h3 class="form__legend">ТИП</h3>
+          <div class="form__input-group form__input-group--type">
+            <input class="form__radio visually-hidden" type="radio" name="type" id="accessories" checked>
+            <label class="form__inside-label form__inside-label--radio" for="accessories">Аксессуар для интерьера</label>
+            <input class="form__radio visually-hidden" type="radio" name="type" id="toy">
+            <label class="form__inside-label form__inside-label--radio" for="toy">Детская игрушка</label>
+          </div>
+        </div>
         <div class="form__fieldset-container">
-          <fieldset class="form__fieldset form__fieldset--color">
-            <legend class="form__legend">ЦВЕТ</legend>
-            <div class="form__checkbox-container">
+          <div class="form__fieldset form__fieldset--color">
+            <h3 class="form__legend">ЦВЕТ</h3>
+            <div class="form__input-group form__input-group--checkbox">
               <input class="visually-hidden form__checkbox" type="checkbox" name="white" id="color-white" checked>
               <label class="form__inside-label form__inside-label--checkbox" for="color-white">Белый</label>
               <input class="visually-hidden form__checkbox" type="checkbox" name="gray" id="color-gray" checked>
@@ -119,20 +121,22 @@
               <input class="visually-hidden form__checkbox" type="checkbox" name="orange" id="color-orange">
               <label class="form__inside-label form__inside-label--checkbox" for="color-orange">Оранжевый</label>
             </div>
-          </fieldset>
+          </div>
         </div>
-        <fieldset class="form__fieldset form__fieldset--fullname">
-          <legend class="form__legend form__legend--fullname">ФИО</legend>
-          <label class="form__inside-label form__inside-label--fullname" for="name-field">Имя:
-            <input class="form__input form__input--fullname" type="text" name="user-name" id="name-field" placeholder="Введите ваши имя*">
-          </label>
-          <label class="form__inside-label form__inside-label--fullname" for="second-name-field">Фамилия:
-            <input class="form__input form__input--fullname" type="text" name="user-second-name" id="second-name-field" placeholder="Укажите фамилию*">
-          </label>
-          <label class="form__inside-label form__inside-label--fullname" for="patronymic-field">Отчество:
-            <input class="form__input form__input--fullname" type="text" name="user-patronymic" id="patronymic-field" placeholder="Отчество, если желаете">
-          </label>
-        </fieldset>
+        <div class="form__fieldset form__fieldset--fullname">
+          <h3 class="form__legend form__legend--fullname">ФИО</h3>
+          <div class="form__input-group form__input-group--fullname">
+            <label class="form__inside-label form__inside-label--fullname" for="name-field">Имя:
+              <input class="form__input form__input--fullname" type="text" name="user-name" id="name-field" placeholder="Введите ваши имя*">
+            </label>
+            <label class="form__inside-label form__inside-label--fullname" for="second-name-field">Фамилия:
+              <input class="form__input form__input--fullname" type="text" name="user-second-name" id="second-name-field" placeholder="Укажите фамилию*">
+            </label>
+            <label class="form__inside-label form__inside-label--fullname" for="patronymic-field">Отчество:
+              <input class="form__input form__input--fullname" type="text" name="user-patronymic" id="patronymic-field" placeholder="Отчество, если желаете">
+            </label>
+          </div>
+        </div>
         <div class="form__contacts">
           <div class="form__input-wrapper">
             <label class="form__outside-label" for="phone-number">ТЕЛ</label>

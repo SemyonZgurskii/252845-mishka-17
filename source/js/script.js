@@ -9,6 +9,8 @@ var cartAdd = document.querySelectorAll(".product__basket");
 mainNav.classList.remove(".header-navigation--nojs");
 sideMenu.classList.remove(".header__side-menu--nojs");
 
+menuToggle.classList.add("header__menu-toggle--closed");
+
 menuToggle.addEventListener("click", function() {
   if (menuToggle.classList.contains("header__menu-toggle--closed")) {
     menuToggle.classList.remove("header__menu-toggle--closed");
