@@ -1,5 +1,6 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px 0;
@@ -23,4 +24,10 @@
 .social-list__link:active svg {
   fill: #46c1ae;
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .social-list {
+    max-width: 220px;
+  }
 }
